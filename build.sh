@@ -17,6 +17,7 @@ DEVICES=(
 	pafm00
 	trident
 	olympic
+	troiks
 )
 #####################################
 
@@ -35,7 +36,7 @@ function _help(){
 	echo "	--outputdir, -O:      output folder."
 	echo "	--help, -h:           show this help."
 	echo
-	echo "MainPage: https://github.com/edk2-porting/edk2-sdm845"
+	echo "MainPage: https://github.com/LumiaOS4Android/edk2-sdm845"
 	exit "${1}"
 }
 
@@ -143,7 +144,6 @@ GITCOMMIT="$(git describe --tags --always)"||GITCOMMIT="unknown"
 export GITCOMMIT
 echo > ramdisk
 set -e
-python3 assets/generate-logo.py "${GITCOMMIT}"
 if [ "${DEVICE}" == "all" ]
 then	E=0
 	for i in "${DEVICES[@]}"

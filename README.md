@@ -47,6 +47,7 @@ QQ group: 697666196 (Never On-Topic)
 13. OPPO Find X        (pafm00)
 14. Smartisan R1       (trident)
 15. Nokia9 PureView    (olympic)
+16. Motorola One Action(troika)
 
 ## Dependencies
 
